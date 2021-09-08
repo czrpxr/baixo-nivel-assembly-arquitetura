@@ -17,7 +17,7 @@ O shift e a rotação são operações muito comuns e úteis na operação de bi
 A operação de shift consiste em mover os bits para a esquerda ou direita, conforme vemos abaixo  
 
 <br />  
--_Shift para Esquerda_ -  No shift para esquerda os bits são movimentados para o lado esquerdo. Vamos tomar como exemplo a movimentação de cada bit em uma posição. Após o deslocamento dos bits, o bit que estava presente na posição 7 é automaticamente descartado e a posição 0 será reposta com o valor zero. Quando realizamos esta operação, estamos automaticamente multiplicando este número  binário por 2 (sua base). Se movermos novamente a multiplicação total será 2 x 2 = 4.  
+-_Shift para Esquerda_ - No shift para esquerda os bits são movimentados para o lado esquerdo. Vamos tomar como exemplo a movimentação de cada bit em uma posição. Após o deslocamento dos bits, o bit que estava presente na posição 7 é automaticamente descartado e a posição 0 será reposta com o valor zero. Quando realizamos esta operação, estamos automaticamente multiplicando este número  binário por 2 (sua base). Se movermos novamente a multiplicação total será 2 x 2 = 4.  
 Ou seja, ao deslocar bits para esquerda **n** vezes, significa que estamos multiplicando aquele número por *2 elevado a n*.  
 
 ![](./imgs/14_001.png)  
