@@ -4,9 +4,9 @@ Este repositório contém anotações pessoais sobre arquitetura de computadores
 
 Esta área é utilizada como caderno aberto para anotações 
 
-Caso queira entrar em contato:
-E-mail - cezar.peixeiro@gmail.com
-Twitter: @czrpxr
+Caso queira entrar em contato:  
+E-mail - cezar.peixeiro@gmail.com  
+Twitter - [@czrpxr](https://www.twitter.com/czrpxr)
 
 ## Posso copiar?
 Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser. O conhecimento é aberto. Este é apenas um facilitador.
