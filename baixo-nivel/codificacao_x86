@@ -1,0 +1,25 @@
+
+# 3.10 Encoding do x86
+
+
+#### Próximo: [3.11 xxxxx](./xxxx.md)  
+#### Anterior: [3.9 Modos de Endereçamento](./formas_enderecamento.md)  
+
+---  
+Ao escrever um código em assembly estamos usando operandos (mov, add, sub,...) para representar operações, porém a CPU opera sua lógica em cima de circuitos que decodificam os operandos para agir apropriadamente. Uma CPU típica utiliza um certo número de bits para definir cada um dos operandos. Alguns sistemas (por exemplo, CISC - Complex Instruction Set Computers) codificam estes campos de um modo muito complexo, gerando instruções muito compactas. Outros sistemas (por exemplo, RISC - Reduced Instruction Set Computers) codificam os operandos de uma maneira mais simples, mesmo que isso significa desperdiçar alguns bits no operando ou limitando o número de operações. A família 80x86 é definitivamente CISC e possui uma das mais complexas codificações decodificações.  
+Em uma instrução típica da família x86 as instruções básicas são compostas por 1 ou 3 bytes. O operando é um byte individual que possui três campos: O primeiro, os primeiros 3 bits mais significativos, definem a classe da instrução. Com isso temos 8 combinações. Como você deve lembrar, temos 20 classes de instruções e não podemos codificar 20 instruções com três bits, portanto temos que utilizar alguns truques para trabalhar com as classes restantes.
+  
+![](./imgs/310_001.png)  
+
+Observando a primeira imagem para definir uma instrução de operação particular, você deve apenas selecionar os bits apropriados para iii, rr e mmm. Por exemplo, para codificar a instrução mov ax, bx vocë deve selecionar iii=110 (mov reg, reg), rr=00 (ax) e mmm=001 (bx). Isso produzirá a instrução de um byte 11000001 ou 0C0h.  
+Algumas instruções x86 necessitam de mais de um byte. Por exemplo, a instrução **mov ax, [1000]** trás para ax o valor que está na posição da memória [1000]. A codificação para esta instrução deveria ser 11000110 ou 0C6h. Contudo, a codificação da instrução **mov ax, [2000]** também é 0C6h. Claramente estas duas instruções fazem coisas diferentes: uma carrega o valor da posição 1000h enquanto o outro da posição 2000h. Para codificar um endereço para os formatos [xxxx] ou [xxxx+bx] você deve seguir sua instrução com o endereço ou constante de 16 bits, com o btyte menos significativo imediatamente após a instrução codificada e o byte mais significativo logo em seguida. Sendo assim, a codificação para **mov ax, [1000] ficaria 0C6h, 00h, 10h** e para **mov ax, [2000] ficaria 0C6h, 00h, 20h**.
+
+Existem quatro instruções de um operando. A primeira (00) codifica a operação para "zero-operando". Veja a imagem abaixo:  
+
+![](./imgs/310_002.png)  
+
+A segunda instrução prove codificações para operação de JUMP:  
+
+![](./imgs/310_003.png)  
+
+A terceira não é uma instrução. Este é o operador bit-a-bit NOT que inverte todos os bits no registrador de destino ou no operando. O quarto não possui atribuição. Qualquer tentativa de utilizá-lo leventará um erro.  
