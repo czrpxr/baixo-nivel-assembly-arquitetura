@@ -31,3 +31,4 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
+* Professional Assembly Language, por Richard Blum
