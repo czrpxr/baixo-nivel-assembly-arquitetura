@@ -25,6 +25,7 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     3.5 [Estado de Espera](./baixo-nivel/estado_espera.md)  
     3.6 [Memória Cache](./baixo-nivel/cache.md)  
 4. [O Processador](./baixo-nivel/registradores_flags.md)
+    4.1 [Unidade de Controle](./baixo-nivel/unidade_de_controle.md)
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
