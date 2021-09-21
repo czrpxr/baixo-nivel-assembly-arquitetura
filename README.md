@@ -24,10 +24,7 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     3.4 [O Clock](./baixo-nivel/clock.md)  
     3.5 [Estado de Espera](./baixo-nivel/estado_espera.md)  
     3.6 [Memória Cache](./baixo-nivel/cache.md)  
-    3.7 [Registradores](./baixo-nivel/registradores.md)  
-    3.8 [Conjunto de Operações dos x86](./baixo-nivel/operacoesx86.md)  
-    3.9 [Modos de endereçamento](./baixo-nivel/formas_enderecamento.md)  
-    3.10 [Encoding do x86](./baixo-nivel/codificacao_x86.md)
+4. [O Processador](./baixo-nivel/registradores_flags.md)
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
