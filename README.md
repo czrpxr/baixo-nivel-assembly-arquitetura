@@ -1,6 +1,6 @@
 # Baixo Nível | Arquitetura de Computadores | Assembly
 
-Este repositório contém anotações pessoais sobre arquitetura de computadores e operações de baixo nível (incluindo linguagem assembly)
+Estes repositório contém anotações pessoais sobre arquitetura de computadores e operações de baixo nível (incluindo linguagem assembly)
 
 Esta área é utilizada como caderno aberto para anotações 
 
