@@ -11,11 +11,7 @@ Twitter - [@czrpxr](https://www.twitter.com/czrpxr)
 ## Posso copiar?
 Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser. O conhecimento é aberto. Este é apenas um facilitador.
 
-<<<<<<< HEAD
 1. [Binários e Hexadecimaisx](./baixo-nivel/binarios.md)  
-=======
-1. [Binários e Hexadecimaiss](./baixo-nivel/binarios.md)  
->>>>>>> a04b80fd52a2b41286eacb488e444922ffa10911
     1.1 [Bit, Nibble, Byte e Word](./baixo-nivel/estruturas.md)  
     1.2 [Operações Lógicas](./baixo-nivel/operacoes_logicas.md)  
     1.3 [Sobre os Números Positivos e Negativos](./baixo-nivel/signed_unsigned.md)  
