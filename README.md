@@ -1,6 +1,6 @@
 # Baixo Nível | Arquitetura de Computadores | Assembly
 
-Este repositório contém anotações pessoais sobre arquitetura de computadores e operações de baixo nível (incluindo linguagem assembly)
+Estes repositório contém anotações pessoais sobre arquitetura de computadores e operações de baixo nível (incluindo linguagem assembly)
 
 Esta área é utilizada como caderno aberto para anotações 
 
@@ -24,9 +24,9 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     3.4 [O Clock](./baixo-nivel/clock.md)  
     3.5 [Estado de Espera](./baixo-nivel/estado_espera.md)  
     3.6 [Memória Cache](./baixo-nivel/cache.md)  
-4. [O Processador](./baixo-nivel/registradores_flags.md)
-    4.1 [Unidade de Controle](./baixo-nivel/unidade_de_controle.md)
-    4.3
+4. [O Processador](./baixo-nivel/registradores_flags.md)  
+    4.1 [Unidade de Controle](./baixo-nivel/unidade_de_controle.md)  
+    4.2
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
