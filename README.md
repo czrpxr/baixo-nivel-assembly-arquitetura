@@ -12,7 +12,7 @@ Twitter - [@czrpxr](https://www.twitter.com/czrpxr)
 Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser. O conhecimento é aberto. Este é apenas um facilitador.
 
 <<<<<<< HEAD
-1. [Binários e Hexadecimaisx](./baixo-nivel/binarios.md)  
+1. [Binários e Hexadecimais](./baixo-nivel/binarios.md)  
 =======
 1. [Binários e Hexadecimaiss](./baixo-nivel/binarios.md)  
 >>>>>>> a04b80fd52a2b41286eacb488e444922ffa10911
