@@ -26,7 +26,8 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     3.6 [Memória Cache](./baixo-nivel/cache.md)  
 4. [O Processador](./baixo-nivel/o_processador.md)  
     4.1 [Partes do Processador](./baixo-nivel/partes_processador.md)  
-    4.2 [Tipos de Registradores](./baixo-nivel/tipos_registradores.md)
+    4.2 [Tipos de Registradores](./baixo-nivel/tipos_registradores.md)  
+    4.3 [Tipos de Flags](./baixo-nivel/tipos_flags.md)  
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
