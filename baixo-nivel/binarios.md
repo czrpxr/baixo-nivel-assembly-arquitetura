@@ -4,8 +4,6 @@
 
 O conteúdo é baseado na arquitetura intel x86 32-bits
 
-
-
 #### Próximo: [1.1 Bit, Nibble, Byte e Word](./estruturas.md)
 
 ---

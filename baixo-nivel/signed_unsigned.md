@@ -3,7 +3,6 @@
 # 1.3 Sobre os Números Positivos e Negativos
 
 
-
 #### Anterior: [1.2 Operações Lógicas](./operacoes_logicas.md)
 #### Próximo: [1.4 Shift (deslicamento) e Rotação](./shift_rotacao.md)
 

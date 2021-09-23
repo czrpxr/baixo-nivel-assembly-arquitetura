@@ -3,9 +3,8 @@
 # 1.4 Shift (deslocamento) e Rotação
 
 
-
 #### Anterior: [1.3 Sobre os Números Positivos e Negativos](./signed_unsigned.md)
-#### Próximo: [1.5]()
+#### Próximo: [2.0 Algebra Booleana](./algebra_booleana_intro.md)  
 
 ---  
 

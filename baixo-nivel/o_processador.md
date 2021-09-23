@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/style.css">
 
-#### Anterior: [3.6 Memória Cache](./baixo-nivel/cache.md)  
-#### Próximo: [4.1 Unidade de Controle](./baixo-nivel/unidade_de_controle.md)
+#### Anterior: [3.6 Memória Cache](./cache.md)  
+#### Próximo: [4.1 Partes do Processador](./partes_processador.md)
 
 ---
 

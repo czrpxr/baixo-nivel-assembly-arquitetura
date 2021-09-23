@@ -1,8 +1,8 @@
 
 # 3.6 Memória Cache
 
-#### Próximo: [4.0 O Processador](./baixo-nivel/registradores_flags.md)
-#### Anterior: [3.5 Estado de Espera](./baixo-nivel/estado_espera.md) 
+#### Próximo: [4.0 O Processador](./registradores_flags.md)
+#### Anterior: [3.5 Estado de Espera](./estado_espera.md) 
 
 ---  
 Se você analisar um programa comum, você perceberá que ele tende a acessar a mesma localização na memória repetidas vezes. Além disso, você também descobrirá que um programa geralmente acessa endereços adjacentes. O nome técnico para estes fenômenos é _localidade de referência temporal_ e _localidade de referência espacial_.  
