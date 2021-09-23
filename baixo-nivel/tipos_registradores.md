@@ -9,7 +9,7 @@ Na seção 3.7 já foi tratado um pouco sobre registradores. Aqui estão alguns 
 
 --- 
 
-* *REGISTRADORES DE USO GERAL*  
+## REGISTRADORES DE USO GERAL  
 
 Estes registradores armazenam dados temporariamente conforme processado. Possuem 32 bits na arquitetura de 32 bits. Cada nova versão é criada para ser compatível com as versões anteriores. Portanto, códigos que utilizam registradores de 8-bits como no caso dos chips 8080 ou 16-bits nos modelos antigos do x86 continuam válidos nos de 32-bits.  
 
@@ -33,7 +33,7 @@ Na seção 3.7 os registradores foram nomeados por AX, BX, CX e DX. Estes nomes 
 
 Referenciando AX, a palavra binária menos significativa de EAX será utilizado. Referenciando AL, o byte menos significativo de EAX será utilizado. AH faz referência ao byte mais significativo, depois de AL.  
 
-* *REGISTRADORES DE SEGMENTO*  
+## REGISTRADORES DE SEGMENTO  
 
 Os registradores de segmento são utilizados especificamente para referenciar posições na memória. A plataforma 32-bits permite três diferentes métodos de acesso ao sistema de memória: 
 
@@ -61,12 +61,12 @@ O registrador SS é utilizado para apontar para o segmento de pilha. Ele contém
 
 - Modo real - Se um programa está utilizando o modo real de endereçamento, todos os seus registradores de segmento apontam para o endereço zero linear e não são alterados pelo programa. Todos os códigos de instrução, elementos de dados e pilha são acessados diretamente pelo seu endereço linear.
 
-* *REGISTRADORES DE PONTEIRO DE INSTRUÇÃO*  
+## REGISTRADORES DE PONTEIRO DE INSTRUÇÃO   
 
 O registrador de ponteiro de instrução (ou EIP), algumas vezes chamado de *contador*, mantém a posição da próxima instrução de código a ser executada. Uma aplicação não pode modificar diretamente um ponteiro de instrução, Você não pode definir um endereço de memória e carregá-lo no EIP. Ao invés disso, você deve utilizar instruções de controle normais do programa, como *jump*, para alterar a próxima instrução a ser lida.  
 Se utilizado o modelo de memória linear, o ponteiro de instrução contém o endereço linear da posição na memória para a próxima instrução. Se utilizar o modelo de segmento, o ponteiro de instruição apontará para o endereço lógico, referenciado pelo registrador CS.  
 
-* *REGISTRADORES DE CONTROLE*  
+## REGISTRADORES DE CONTROLE  
 Os cinco registradores de controle são uitilizados para determinar o modo de operação do processador e a característica da tarefa atual. Os registradores de controle estão descritos individualmente abaixo:  
 
 |Registrador de controle|Descrição|
