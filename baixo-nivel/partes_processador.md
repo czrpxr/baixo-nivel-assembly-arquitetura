@@ -33,5 +33,12 @@ Os x86 de 32 bits possuem diferentes grupos de registradores com diferentes tama
 * *Controle:* Cinco registradores de 32 bits utilizados para determinar o modo de operação do processador.  
 * *Debug:* Oito registradores de 32 bits utilizados para armazenar informação quando realizado debug no processador. 
 
-Na próxima seção ess discutidos mais detalhadamente.
+Na próxima seção esses discutidos mais detalhadamente.  
+
+* **FLAGS**  
+
+Para cada operação que ocorre no processador deve existir um mecanismo que determina se esta operação foi concluída com sucesso ou não. As flags são utilizadas com essa finalidade.  
+As flags são importantes na linguagem Assembly por elas serem o único meio de determinar se um programa ocorreu com sucesso ou não. Por exemplo, se uma aplicação realizou uma subtração que resultou em um valor negativo, uma flag especial deve ser sinalizada. Sem verificar a flag, o programa em assembly pode não saber que algo deu errado.  
+
+Os tipos de flag estão discriminados em uma seção posterior.
 
