@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="css/style.css">
+
+# 4. O Processador
+
 
 #### Anterior: [3.6 Memória Cache](./cache.md)  
 #### Próximo: [4.1 Partes do Processador](./partes_processador.md)
 
 ---
-
-# 4. O Processador
 
 Embora diferentes famílias de processadores incorporem diferentes instruções e possibilidades, existe um conjunto de componentes comum a maioria deles. Para recaptular, vemos abaixo novamente a estrutura básica de um computador:  
 

@@ -1,9 +1,11 @@
-<link rel="stylesheet" href="css/style.css">
+
+# 4.1 Partes do Processador
 
 #### Anterior: [4.0 O Processador](./o_processador.md)  
 #### Próximo: [4.3 Tipos de Registradores](./tipos_registradores.md)  
 
 ---  
+
 * **UNIDADE DE CONTROLE**  
 
 O coração do processador é a unidade de controle. Suas funções são basicamente as seguintes etapas:  
