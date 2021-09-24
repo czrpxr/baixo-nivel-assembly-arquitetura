@@ -28,8 +28,14 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     4.1 [Partes do Processador](./baixo-nivel/partes_processador.md)  
     4.2 [Tipos de Registradores](./baixo-nivel/tipos_registradores.md)  
     4.3 [Tipos de Flags](./baixo-nivel/tipos_flags.md)  
+5. [Ferramentas para Desenvolvimento em Assembly](./baixo-nivel/ferramentas_assembly.md)
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
-* Professional Assembly Language, por Richard Blum
-***
+* Professional Assembly Language, por Richard Blum  
+
+## Outros links para downloads interessantes:
+* [MASM (Microsoft Assembler) Reference](https://docs.microsoft.com/en-us/cpp/assembler/masm/microsoft-macro-assembler-reference)  
+* [MASM32 SDK Download](http://www.masm32.com/)
+* [NASM Download](http://nasm.sourceforge.net)
+* [HLA Website](http://webster.cs.ucr.edu)
