@@ -1,7 +1,7 @@
 # 5.1 O Assembler
 
 #### Próximo: [5.2 O Linker](./o_linker.md)  
-#### Anterior: [5.0 Ferramentas para Desenvolvimento em Assembly ](./ferramentas_assembly.md)  
+#### Anterior: [5.0 Ferramentas para Desenvolvimento em Assembly](./ferramentas_assembly.md)  
 
 ---  
 
@@ -25,3 +25,27 @@ O GAS é um assembler desenvolvido pela Free Software Foundation e é a platafor
 ### HLA  
 
 O High Level Assembler é uma criação do professor Randall Hyde e cria instruções para Intel nas plataformas Dos, Windows e Linux. A idéia principal por trás do HLA é ensinar linguagem assembly para iniciantes.  
+
+## Detalhes sobre o Assembler GNU  (GAS)  
+
+O GAS é o mais popular entre os assemblers para o ambiente Unix. Ele possui a capacidade de criar instruções para as seguintes plataformas:  
+
+- VAX  
+- AMD 29K  
+- Hitachi H8/300  
+- Intel 80960  
+- Intel 80x86  
+- M680x0  
+- Z8000  
+- MIPS  
+
+A maioria das distribuições Linux inclui o GAS pré-instalado no sistema. Caso seja necessário buscá-lo, você pode procurar por binutils no seu gerenciador de pacotes.  
+
+## Como utilizar o GAS  
+
+Apesar do assembler ser chamado GAS, o parametro utilizado para executá-lo no terminal do Linux é o **as**. Você pode verificar a instalação e a versão digitando
+
+`
+as --version
+`
+
