@@ -31,7 +31,8 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
 5. [Ferramentas para Desenvolvimento em Assembly](./baixo-nivel/ferramentas_assembly.md)  
     5.1 [O Assembler](./baixo-nivel/o_assembler.md)  
     5.2 [O Linker](./baixo-nivel/o_linker.md)  
-    5.3 [O debugger](./baixo-nivel/o_debugger.md)  
+    5.3 [O Debugger](./baixo-nivel/o_debugger.md)  
+    5.4 [O Compilador](./baixo-nivel/o_compilador.md)  
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
