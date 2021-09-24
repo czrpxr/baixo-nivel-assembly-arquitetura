@@ -56,4 +56,12 @@ the GNU General Public License version 3 or later.
 This program has absolutely no warranty.  
 This assembler was configured for a target of `x86_64-linux-gnu'.  
 `
+  
+Existem diversos parametros para o comando *as*. Eles podem ser visualizados utilizando o comando *as --help*.  
+Como exemplo, podemos converter um programa de teste do arquivo *teste.s* para o arquivo de objeto *teste.o* através do seguinte comando:  
 
+`  
+as -o teste.o test.s  
+`  
+  
+O parâmetro *-o* identifica o nome do arquivo de objeto que será criado (neste caso teste.o). Caso este nome não seja informado o valor padrão para esta saída será o nome *a.out*.  
