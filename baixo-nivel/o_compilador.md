@@ -35,14 +35,14 @@ Existem diversos parametros para o comando *gcc*. Eles podem ser visualizados ut
 Para testar seu compilador, você pode criar um programa de teste em C como o programa abaixo:  
 
 `  
-#include <stdio.h>
-
-int main(void)
-{
-printf("Hello, world!\n");
-
-return 1;
-}
+#include <stdio.h>  
+  
+int main(void)  
+{  
+printf("Hello, world!\n");  
+  
+return 1;  
+}  
 `  
 
 e compilá-lo com a seguinte instrução:  
