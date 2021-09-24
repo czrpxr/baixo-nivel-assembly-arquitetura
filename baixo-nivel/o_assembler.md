@@ -1,6 +1,6 @@
 # 5.1 O Assembler
 
-#### Próximo: [5.2 ](./)  
+#### Próximo: [5.2 O Linker](./o_linker.md)  
 #### Anterior: [5.0 Ferramentas para Desenvolvimento em Assembly ](./ferramentas_assembly.md)  
 
 ---  
