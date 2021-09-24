@@ -43,9 +43,16 @@ A maioria das distribuições Linux inclui o GAS pré-instalado no sistema. Caso
 
 ## Como utilizar o GAS  
 
-Apesar do assembler ser chamado GAS, o parametro utilizado para executá-lo no terminal do Linux é o **as**. Você pode verificar a instalação e a versão digitando
+Apesar do assembler ser chamado GAS, o parametro utilizado para executá-lo no terminal do Linux é o **as**. Você pode verificar a instalação e a versão digitando. No meu caso, o retorno foi o seguinte:  
 
 `
 as --version
+GNU assembler (GNU Binutils for Ubuntu) 2.34
+Copyright (C) 2020 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or later.
+This program has absolutely no warranty.
+This assembler was configured for a target of `x86_64-linux-gnu'.
+
 `
 
