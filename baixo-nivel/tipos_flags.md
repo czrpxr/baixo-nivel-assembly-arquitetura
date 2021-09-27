@@ -17,7 +17,7 @@ As flags são divididas em três grupos baseados em suas funcões:
 
 * **FLAGS DE STATUS**  
 
-As flags de status são utilizadas para indicar o resultado de alguma operação matemática realizada pelo processador. Os status são representados conforme tabela: 
+As flags de status são utilizadas para indicar o resultado de alguma operação matemática realizada pelo processador. Os status são representados conforme tabela:
 
 |Flag|Bit|Nome|
 |:---:|:---:|:---:|
@@ -28,15 +28,15 @@ As flags de status são utilizadas para indicar o resultado de alguma operação
 |SF|7| Sign Flag|
 |OF|11| Overflow Flag|
 
-- Carry Flag: é utilizada se alguma operação matemática de um inteiro sem sinal (unsigned) gerar um carregamento ou empéstimo de um bit mais significativo. Eles representa uma condição de overflow no registrador envolvido na operação. Quando um overflow acontece, o dado que é mantido no registrador não é a resposta correta para a operação.  
+- Carry Flag: é utilizada se alguma operação matemática de um inteiro sem sinal (unsigned) gerar um carregamento ou empréstimo de um bit mais significativo. Eles representa uma condição de overflow no registrador envolvido na operação. Quando um overflow acontece, o dado que é mantido no registrador não é a resposta correta para a operação.  
 
-- Parity Flag: é utilizada para indicar quando o registrador do resultado de uma operação matemática contem um dado corrompido. Apenas como um indicador de validação, o parity flag é ativado quando o numero total de bits 1 no resultado é par e desativado quando o numero total de bits 1 é ímpar. 
+- Parity Flag: é utilizada para indicar quando o registrador do resultado de uma operação matemática contem um dado corrompido. Apenas como um indicador de validação, o parity flag é ativado quando o numero total de bits 1 no resultado é par e desativado quando o numero total de bits 1 é ímpar.
 
 - Adjust Flag: é utilizada em operações matemáticas de BCD (Binary Coded Decimal)  
 
-- Zero Flag: é ativada se o resultado de uma operação é zero. É uma maneira fácil de verificar se o resultado de uma operaçao matemática foi nulo.  
+- Zero Flag: é ativada se o resultado de uma operação é zero. É uma maneira fácil de verificar se o resultado de uma operação matemática foi nulo.  
 
-- Overflow Flag: é utilizada quando um valor positivo é grande demais ou um número negativo é pequeno demais ára ser representado em um registrador.  
+- Overflow Flag: é utilizada quando um valor positivo é grande demais ou um número negativo é pequeno demais para ser representado em um registrador.  
 
 * **FLAGS DE CONTROLE**  
 
@@ -61,8 +61,8 @@ As Flags de Sistema são utilizadas para controlar operações de baixo nível d
 
 - Trap Flag: é ativada para permitir o modo de single-step. No modo single-step, o processador realiza apenas uma instrução de cada vez, aguardando um sinal para realizar a próxima. Esse atributo é extremamente util quando debugando aplicações em código assembly.  
 - Flag de Interrupção habilitada: controla a resposta do processador a sinais recebidos de fontes externas
-- Flag de privilégio de I/O: indicao nível de privilégioda tarefa atual. Define o nível de acesso ao espaço de endereço de I/O. Esta flag deve ser menor ou igual ao nível de acesso necessário para acessar o espaço de endereços de I/O. Caso contrário, a requisição para acessar este espaço será negada.  
-- Flag de tarefa aninhada: controlar se uma tarefa atual está relacionada a tarefa anterior. É utilizada para conectrartarefas interrompidas ou requisitadas.  
+- Flag de privilégio de I/O: indica o nível de privilégio da tarefa atual. Define o nível de acesso ao espaço de endereço de I/O. Esta flag deve ser menor ou igual ao nível de acesso necessário para acessar o espaço de endereços de I/O. Caso contrário, a requisição para acessar este espaço será negada.  
+- Flag de tarefa aninhada: controlar se uma tarefa atual está relacionada a tarefa anterior. É utilizada para conectar tarefas interrompidas ou requisitadas.  
 - Flag de Retorno de Operação: controla como o processador responde a exceções quando no modo de debug.  
 - Flag de movo virtual 8086: indica que o processador está operando no modo virtual-8086 ao invés do modo protegido ou modo real.  
 - Flag de checagem de alinhamento: é utilizada para habilitar o checagem de alinhamento de referencias de memória.  

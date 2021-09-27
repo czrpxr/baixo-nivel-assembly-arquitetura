@@ -7,7 +7,7 @@
 
 Na seção 3.7 já foi tratado um pouco sobre registradores. Aqui estão alguns outros detalhes adicionais.
 
---- 
+---
 
 ## REGISTRADORES DE USO GERAL  
 
@@ -21,11 +21,11 @@ Enquanto a maioria dos registradores de uso geral podem armazenar qualquer tipo 
 |EBX|Ponteiro para dado na memória|
 |ECX|Contador para strings ou loops|
 |EDX|Ponteiro para Entrada/Saída|
-|EDI|Ponteiro de dados para denstino de operação com strings|
+|EDI|Ponteiro de dados para destino de operação com strings|
 |ESI|Ponteiro para origem de strings para operação|
 |ESP|Ponteiro de Pilha (Stack)|
 |EBP|Ponteiro de dados de Pilha (Stack)|
-  
+
 Na seção 3.7 os registradores foram nomeados por AX, BX, CX e DX. Estes nomes foram utilizados por se tratarem de registradores de 16-bits. Registradores com capacidades (versões anteriores) menores também podem ser referenciados na arquitetura 32-bits utilizando a seguinte referência:  
 
 
@@ -35,9 +35,9 @@ Referenciando AX, a palavra binária menos significativa de EAX será utilizado.
 
 ## REGISTRADORES DE SEGMENTO  
 
-Os registradores de segmento são utilizados especificamente para referenciar posições na memória. A plataforma 32-bits permite três diferentes métodos de acesso ao sistema de memória: 
+Os registradores de segmento são utilizados especificamente para referenciar posições na memória. A plataforma 32-bits permite três diferentes métodos de acesso ao sistema de memória:
 
-- Modelo de memória linear (Flat) - representa todo sistema de memória como um espaço de endereçamento contínuo. Toda as instruções, dados e a pilha estão contidos no mesmo espaço. Cada posição na memória é acessada popr um endereço específico, chamado "endereço linear".  
+- Modelo de memória linear (Flat) - representa todo sistema de memória como um espaço de endereçamento contínuo. Toda as instruções, dados e a pilha estão contidos no mesmo espaço. Cada posição na memória é acessada por um endereço específico, chamado "endereço linear".  
 
 - Modelo de memória segmentado - divide o sistema de memória em grupos independentes de segmentos, referenciados por ponteiros localizados nos registradores de segmento. Cada segmento é utilizado para armazenar um tipo específico de dado. Um segmento é utilizado para instruções, outro para dados e um terceiro para a pilha do programa.  
 
@@ -53,7 +53,7 @@ O registrador de segmento é utilizado para armazenar o endereço do segmento pa
 |FS|Segmento Extra de Ponteiro|
 |GS|Segmento Extra de Ponteiro|
 
-Cada registrador de segmento possui 16-bits e contém um ponteiro para o início do segmento de memória específicado. O registrador CS contém o ponteiro para o segmento de código na memória. O segmento de código é onde as instruções são armazenadas. O processador requisita os códigos de instrução da memória baseado no valor de CS e um valor de offset contido no ponteiro de instrução (EIP - Extended Instruction Pointer).  Um programa não pode alterar ou carregar explicitamente o registrador CS. O processador atribui seu valor conforme é atribuido ao programa um endereço na memória.  
+Cada registrador de segmento possui 16-bits e contém um ponteiro para o início do segmento de memória especificado. O registrador CS contém o ponteiro para o segmento de código na memória. O segmento de código é onde as instruções são armazenadas. O processador requisita os códigos de instrução da memória baseado no valor de CS e um valor de offset contido no ponteiro de instrução (EIP - Extended Instruction Pointer).  Um programa não pode alterar ou carregar explicitamente o registrador CS. O processador atribui seu valor conforme é atribuído ao programa um endereço na memória.  
 
 Os registradores de segmento DS, ES, FS e GS são utilizados para apontar para segmentos de dados. Existindo quatro segmentos de dados separados, o programa pode ajudar a separar elementos de dados, garantindo que eles não serão sobrepostos. O programa deve carregar os registradores de segmento de dados com o valor de ponteiro apropriado para o segmento e referenciar posições individuais de memória utilizando um valor de offset.  
 
@@ -64,10 +64,10 @@ O registrador SS é utilizado para apontar para o segmento de pilha. Ele contém
 ## REGISTRADORES DE PONTEIRO DE INSTRUÇÃO   
 
 O registrador de ponteiro de instrução (ou EIP), algumas vezes chamado de *contador*, mantém a posição da próxima instrução de código a ser executada. Uma aplicação não pode modificar diretamente um ponteiro de instrução, Você não pode definir um endereço de memória e carregá-lo no EIP. Ao invés disso, você deve utilizar instruções de controle normais do programa, como *jump*, para alterar a próxima instrução a ser lida.  
-Se utilizado o modelo de memória linear, o ponteiro de instrução contém o endereço linear da posição na memória para a próxima instrução. Se utilizar o modelo de segmento, o ponteiro de instruição apontará para o endereço lógico, referenciado pelo registrador CS.  
+Se utilizado o modelo de memória linear, o ponteiro de instrução contém o endereço linear da posição na memória para a próxima instrução. Se utilizar o modelo de segmento, o ponteiro de instrução apontará para o endereço lógico, referenciado pelo registrador CS.  
 
 ## REGISTRADORES DE CONTROLE  
-Os cinco registradores de controle são uitilizados para determinar o modo de operação do processador e a característica da tarefa atual. Os registradores de controle estão descritos individualmente abaixo:  
+Os cinco registradores de controle são utilizados para determinar o modo de operação do processador e a característica da tarefa atual. Os registradores de controle estão descritos individualmente abaixo:  
 
 |Registrador de controle|Descrição|
 |:---:|:---:|

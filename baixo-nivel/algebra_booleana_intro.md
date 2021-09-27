@@ -5,7 +5,7 @@
 #### Próximo: [3. Organização de um Sistema x86](./sistemax86.md)  
 ---
 
-A lógica da álgebra booleana é a base da computação. Qualquer algoritmo ou circuito eletrônico pode ser representado utlizando equações booleanas. São operações que acontece muito mais próximas da camada de hardware, mas são essenciais para entender a fundo o comportamento de sistemas de computação.  
+A lógica da álgebra booleana é a base da computação. Qualquer algoritmo ou circuito eletrônico pode ser representado utilizando equações booleanas. São operações que acontece muito mais próximas da camada de hardware, mas são essenciais para entender a fundo o comportamento de sistemas de computação.  
 
 Para facilitar o entendimento será usada a seguinte simbologia:  
 ** * **: Para indicar o operador AND  

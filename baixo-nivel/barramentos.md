@@ -7,7 +7,7 @@
 
 Os barramentos do sistema são utilizados para conectar vários componentes em uma máquina Von Neumann. A família 80x86 possui 3 barramentos principais: endereço, dados e controle. Um barramento é simplesmente uma conjunto de fios que transferem sinais elétricos entre os componentes de um sistema. Eles variam de processador para processador, mas todos desempenham a mesma função entre sistemas.  
 
-Um systema 80x86 padrão utiliza níveis lógicos TTL (Transistor-Transistor Logic). Isso significa que cada fio do barramento utiliza voltagens padrões para representar 0 e 1 (No caso do TTL, 0.0 - 0.8V representam 0 e 2.4 - 5V representa 1).  
+Um sistema 80x86 padrão utiliza níveis lógicos TTL (Transistor-Transistor Logic). Isso significa que cada fio do barramento utiliza voltagens padrões para representar 0 e 1 (No caso do TTL, 0.0 - 0.8V representam 0 e 2.4 - 5V representa 1).  
 
 ## Barramento de Dados  
 
@@ -17,7 +17,7 @@ O tamanho do barramento de dados afeta o desempenho de um sistema mais do que o 
 
 ## Barramento de Endereço  
 
-Para transmitir os dados através do barramento de dados, a máquina necessita saber o _endereço_ ou origem/destino da entrada/saída dos dados. Para resolver este problema existe o barramento de endereço. Para cada compoente de entrada/saída ou elemento na memória, é atribuído um endereço. Quando um software necessita acessar alguma localização específica a localização é colocada no barramento de endereço. O dispositivo reconhece o endereço e então instrui a memória ou entrada/saída a ler ou enviar dados para aquela localização.  
+Para transmitir os dados através do barramento de dados, a máquina necessita saber o _endereço_ ou origem/destino da entrada/saída dos dados. Para resolver este problema existe o barramento de endereço. Para cada componente de entrada/saída ou elemento na memória, é atribuído um endereço. Quando um software necessita acessar alguma localização específica a localização é colocada no barramento de endereço. O dispositivo reconhece o endereço e então instrui a memória ou entrada/saída a ler ou enviar dados para aquela localização.  
 Com apenas uma linha de endereçamento o processador poderia criar exatamente dois endereços únicos (0 e 1). Com n linhas o processador pode prover 2 elevado a n endereços únicos. Sendo assim, o número de bits no barramento de endereços irá determinar o número máximo de memória endereçável.  
 
 _Exemplos:_
@@ -34,5 +34,5 @@ _Exemplos:_
 ## Barramento de Controle  
 
 Vamos imaginar que o processador está enviando e recebendo dados da memória através do barramento de dados. Em determinado momento nos perguntamos _"Estamos enviando ou recebendo?"._ Nesse momento entra o **barramento de controle**: ele especifica parâmetros para a comunicação como a direção do dado (enviando ou recebendo), o clock do sistema, status, interrupções e por aí vai.  
-As linhas de controle de _leitura_ e _escrita_ controlam oa direção do dado no barramento de dados. Quando ambos estão definidos como 1, o processador, a memória e as entradas/saídas não estão se comunicando. Se a linha de leitura é 0, o processador está lendo dado da memória, quando a linha de escrita é 0, o sistema esta transferindo dados do processador para memória.  
+As linhas de controle de _leitura_ e _escrita_ controlam a direção do dado no barramento de dados. Quando ambos estão definidos como 1, o processador, a memória e as entradas/saídas não estão se comunicando. Se a linha de leitura é 0, o processador está lendo dado da memória, quando a linha de escrita é 0, o sistema esta transferindo dados do processador para memória.  
 A família 80x86 oferece dois espaços de endereçamento distintos: um para memória e outro para as entradas/saídas. Enquanto os endereço para memória variam de tamanho, os de entrada/saída são de 16 bits. Isso permite que um processador enderece 65536 diferentes endereços de entrada/saída (lembrando que alguns dispositivos precisam de mais de um endereço para entrada e saída.

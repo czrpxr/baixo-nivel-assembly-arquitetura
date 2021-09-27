@@ -30,7 +30,7 @@ Ou seja, ao deslocar bits para esquerda **n** vezes, significa que estamos multi
 **SHIFT ARITMÉTICO**
 
 Lembrando das operações de shift mencionadas anteriormente, podemos observar o seguinte exemplo:  
-Temos o número decimal 254 (0FEh ou 1111 1110b). Se realizarmos o shift em uma posição para a direita teremos o número 127 (0EFh ou 0111 1111b) (metade do anterior conforme deduzimos). A questão é neste raciocínio estamos lidando com números naturais (apenas positivos)! E se quisermos fazer esta operação com números negativos (vimos números negativos na [seção anterior](./signed_unsigned.md)? Se 1 byte for utilizado para representar um número inteiro (positivo ou negativo), o valor real de 0FEh será -2. Porém ao realizar a operação de shift para direita passaríamos a ter o valor 127 já que o bit de alta ordem, o que simboliza o sinal númerico, se tornou zero, e não teremos o -1 esperado. Como resolver este problema?  
+Temos o número decimal 254 (0FEh ou 1111 1110b). Se realizarmos o shift em uma posição para a direita teremos o número 127 (0EFh ou 0111 1111b) (metade do anterior conforme deduzimos). A questão é neste raciocínio estamos lidando com números naturais (apenas positivos)! E se quisermos fazer esta operação com números negativos (vimos números negativos na [seção anterior](./signed_unsigned.md)? Se 1 byte for utilizado para representar um número inteiro (positivo ou negativo), o valor real de 0FEh será -2. Porém ao realizar a operação de shift para direita passaríamos a ter o valor 127 já que o bit de alta ordem, o que simboliza o sinal numérico, se tornou zero, e não teremos o -1 esperado. Como resolver este problema?  
 Para resolver esta questão existe o SHIFT ARITMÉTICO.  
 
 ![](./imgs/14_003.png)  

@@ -6,7 +6,7 @@
 #### Anterior: [1.2 Operações Lógicas](./operacoes_logicas.md)
 #### Próximo: [1.4 Shift (deslicamento) e Rotação](./shift_rotacao.md)
 
-OBS: nesta área, falo de **números naturais** para tratar os números sem sinais e **números inteiros** para tratar números que podem ser tanto positivos quanto negativos (com sinais). 
+OBS: nesta área, falo de **números naturais** para tratar os números sem sinais e **números inteiros** para tratar números que podem ser tanto positivos quanto negativos (com sinais).
 
 ---
 
@@ -120,7 +120,7 @@ Neste caso podemos simplesmente completar os bits a mais com zeros. Com isso, na
 |0000 0101|5|0000 0000 0000 0101
 
 **- Converter um número para quantidade maior de bits (números com sinal)**  
-Simplementes completamos os bits a mais com os mesmos valores do  bit mais significativo. Exemplos:  
+Simplesmente completamos os bits a mais com os mesmos valores do  bit mais significativo. Exemplos:  
 
 |Binário 8 bits|Decimal| Binário 16 bits
 |:---:|:---:|:---:|

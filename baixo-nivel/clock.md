@@ -5,7 +5,7 @@
 #### Anterior: [3.3 Entradas e Saídas](./entradas_saidas.md)  
 
 ---  
-Mesmo que os computadores modernos estejam cada vez mais rápidos eles ainda precisam de uma quantidade de tempo finita para completar até mesmo as menores tarefas. Em máquina de arquitetura Von neumann, como os 80x86, a maioria das operações são **seriadas**. Isso significa que o computador executa suas ações em uma determinada ordem. Sendo assim _"Como o processador executa tarefas e como sabemos quanto tempo levaram para ser executadas?"_.  
+Mesmo que os computadores modernos estejam cada vez mais rápidos eles ainda precisam de uma quantidade de tempo finita para completar até mesmo as menores tarefas. Em máquina de arquitetura Von Neumann, como os 80x86, a maioria das operações são **seriadas**. Isso significa que o computador executa suas ações em uma determinada ordem. Sendo assim _"Como o processador executa tarefas e como sabemos quanto tempo levaram para ser executadas?"_.  
 
 O processador é um componente eletrônico muito complexo que coordenado de maneira errada produzirá resultados errôneos. Para garantir que todas as operações ocorram no momento certo, os 80x86 utilizam um sinal chamado **CLOCK**.  
 
@@ -39,4 +39,3 @@ Acima temos o pulso de clock representando o clico de escrita do 80486. Conforme
 Os dispositivos de memória possuem diversas características, mas as duas principais são a capacidade e a velocidade (tempo de acesso). Uma memória RAM (_random access memory_) possui a capacidade de 4 ou mais megabytes e velocidades entre 50-100ns. Um 80486 de 33MHz típico utiliza memórias de 70ns.  
 
 Mas espere um pouco: com 33 MHz de clock o ciclo é aproximadamente 33ns. Como então devemos considerar 70ns? A resposta é o **estado de espera** (wait state).
-

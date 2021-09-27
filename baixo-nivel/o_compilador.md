@@ -5,9 +5,9 @@
 
 ---  
 
-Se você planeja criar um programa apenas com a linguagem assembly, um compilador não será necessário. Contudo, a maioria dos programadores prefere desenvolver seua aplicações em uma linguagem de mais alto nível e concentrar seus esforços em assembly na otimização de pontos bem definidos. Para que isso aconteça, você deve ter um compilador instalado para a sua linguagem de alto nível.  
+Se você planeja criar um programa apenas com a linguagem assembly, um compilador não será necessário. Contudo, a maioria dos programadores prefere desenvolver sua aplicações em uma linguagem de mais alto nível e concentrar seus esforços em assembly na otimização de pontos bem definidos. Para que isso aconteça, você deve ter um compilador instalado para a sua linguagem de alto nível.  
 
-O trabalho do compilador é converter a linguagem de alto nível em instruções ao processador. A maioria dos compiladores na verdade realizam um trabalho intermediário: ao invês de converter códigos fonte em instruções eles convertem o código fonte em assembly. Então o código em assembly é convertido em instruções utilizando o assembler. A maioria dos compiladores inclui um assembler em seu compilador.  cle
+O trabalho do compilador é converter a linguagem de alto nível em instruções ao processador. A maioria dos compiladores na verdade realizam um trabalho intermediário: ao invés de converter códigos fonte em instruções eles convertem o código fonte em assembly. Então o código em assembly é convertido em instruções utilizando o assembler. A maioria dos compiladores inclui um assembler em seu compilador.  
 
 Após converter, por exemplo, um código C/C++ em assembly, o compilador utiliza o assembler para criar a instrução para o linker. Você pode interromper o processo entre estes passos e examinar o código assembly. Se você achar que algo pode ser otimizado, o código assembly pode ser modificado.  
 
@@ -36,11 +36,11 @@ Para testar seu compilador, você pode criar um programa de teste em C como o pr
 
 `  
 #include <stdio.h>  
-  
+
 int main(void)  
 {  
 printf("Hello, world!\n");  
-  
+
 return 1;  
 }  
 `  
@@ -51,7 +51,7 @@ e compilá-lo com a seguinte instrução:
 gcc -o cteste teste.c
 `  
 
-Como esperado o *gcc* cria um arquivo executável (cteste). Repare que neste caso não existe um formato intermediário tipo objeto.  Sendo assim, um parâmetro muito útil que pode ser utilizado no gcc é o -S. Este parâmetro disponibiliza o arquivo intermediário na linguagem assembly criado pelo compilador antes que o assembler o acesse: 
+Como esperado o *gcc* cria um arquivo executável (cteste). Repare que neste caso não existe um formato intermediário tipo objeto.  Sendo assim, um parâmetro muito útil que pode ser utilizado no gcc é o -S. Este parâmetro disponibiliza o arquivo intermediário na linguagem assembly criado pelo compilador antes que o assembler o acesse:
 
 `  
 gcc -S teste.c

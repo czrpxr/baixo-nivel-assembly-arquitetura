@@ -6,7 +6,7 @@
 
 ---  
 
-Os Registradores são locais **muito especiais** de memória construidos com flip-flops. Não são parte da memória principal; eles são implementados no processador (on-chip). Vários membros da família 80x86 possuem diferentes tamanhos de registradores. No caso dos 886, 8286, 8486 e 8686 (apenas x86 daqui em diante) possuem exatamente 4 registradores, todos de 16 bits. **Todas as operações aritméticas e de localização ocorrem nos registradores da CPU.**  
+Os Registradores são locais **muito especiais** de memória construídos com flip-flops. Não são parte da memória principal; eles são implementados no processador (on-chip). Vários membros da família 80x86 possuem diferentes tamanhos de registradores. No caso dos 886, 8286, 8486 e 8686 (apenas x86 daqui em diante) possuem exatamente 4 registradores, todos de 16 bits. **Todas as operações aritméticas e de localização ocorrem nos registradores da CPU.**  
 
 Devido ao fato do processador ter tão poucos registradores, damos a cada registrador seu próprio nome e utilizamos eles ao invés de seu endereço. Os nomes são:  
 * **AX** - O registrador _acumulador_  

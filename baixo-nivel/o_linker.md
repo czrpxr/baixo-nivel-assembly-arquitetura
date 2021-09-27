@@ -12,7 +12,7 @@ Todo assembler inclui o seu próprio linker. Você sempre deve utilizar o linker
 
 ## O Linker GNU  
 
-O Linker GNU também é parte do binutils assim como o GAS. Portanto, se você possui o assembler GNU instalado entãopp o linker GNU também estará.  
+O Linker GNU também é parte do binutils assim como o GAS. Portanto, se você possui o assembler GNU instalado então o linker GNU também estará.  
 
 Seu comando para ser executado através do terminal do Linux é o **ld**. Você pode verificar a instalação e a versão digitando. No meu caso, o retorno foi o seguinte:  
 
@@ -27,7 +27,7 @@ the GNU General Public License version 3 or (at your option) a later version.
 This program has absolutely no warranty.
 `  
 
-Existem diversos parametros para o comando *ld*. Eles podem ser visualizados utilizando o comando *ld --help*.  
+Existem diversos parâmetros para o comando *ld*. Eles podem ser visualizados utilizando o comando *ld --help*.  
 Na seção em que falei do assembler mostrei que um arquivo objeto pode ser criado da seguinte maneira através do GAS:  
 
 `  

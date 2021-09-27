@@ -11,7 +11,7 @@ Embora diferentes famílias de processadores incorporem diferentes instruções 
 
 ![](./imgs/4_001.png)  
 
-* **O Processador** 
+* **O Processador**
 Contém o hardware e instruções que controlam a operação do computador. É conectado a outros elementos da máquina utilizando três barramentos: dados, controle e endereço.  
 
 * **Barramentos**  
@@ -19,7 +19,7 @@ O **barramento de controle** é utilizado para sincronizar as funções entre o 
 
 ---
 
-O processador é constituido de vários componentes. Cada componente possui uma função específica. A linguagem Assembly é capaz de manipular cada um destes elementos, por isso é importante conhecê-los. Eles são:  
+O processador é constituído de vários componentes. Cada componente possui uma função específica. A linguagem Assembly é capaz de manipular cada um destes elementos, por isso é importante conhecê-los. Eles são:  
 
 - Unidade de Controle
 - Unidade de Execução
