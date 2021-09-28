@@ -74,7 +74,7 @@ No programa de exemplo que vamnos criar, utilizamos a opção *0* da tabela para
 
 Abaixo temos o código completo desde programa inicial e posteriormente é comentada parte por parte do programa:  
 
-`  
+`
 .section .data  
 
  output:  
@@ -99,7 +99,6 @@ Abaixo temos o código completo desde programa inicial e posteriormente é comen
   movl $0, %ebx  
   int $0x80  
   `  
-
   ### As partes do programa  
 
   *.section .data*  
@@ -134,7 +133,33 @@ Abaixo temos o código completo desde programa inicial e posteriormente é comen
   *movl $36, %edx*  
   *int $0x80*  
     
-  Já temos tudo posicionado em ordem, então chega a hora de exibir na tela. Para arquitetura 32-bits vamos utilizar a instrução **int 0x80** do Linux. A parte **int** significa interrupção (*interruption*) que interrompe o fluxo do programa e redireciona para o *handler* que vai lidar com ele. O comando **0x80** é um comando do kernel do Linux, uma chamada de sistema. Concluímos então que o programa será interrompido naquela etapa e direcionado ao Kernel do Linux para lidar com ela. Mas então, o que o Kernel fará com ela? Essa instrução recebe 4 argumento: o primeiro deles deve ser posicionado em EAX, como vemos em *movl $4, %eax*. O **valor 4 significa simplesmente escrever**. O segundo argumento é posicionado em EBX. **O valor 1 no nosso caso é quem vai decodificar a string e aponta para a saída padrão *stdout***. O terceiro argumento é posicionado em ECX e é a **mensagem que será escrita na saída padrão**. No nosso caso, colocamos o valor da nossa string final. E o quarto parâmetro em EDX é o **tamanho da nossa string (36 caracteres ou bytes)**. Em resumo, definimos todos os valores dos parâmetros e executamos o comando.
+  Já temos tudo posicionado em ordem, então chega a hora de exibir na tela. Para arquitetura 32-bits vamos utilizar a instrução **int 0x80** do Linux. A parte **int** significa interrupção (*interruption*) que interrompe o fluxo do programa e redireciona para o *handler* que vai lidar com ele. O comando **0x80** é um comando do kernel do Linux, uma chamada de sistema. Concluímos então que o programa será interrompido naquela etapa e direcionado ao Kernel do Linux para lidar com ela. Mas então, o que o Kernel fará com ela? Essa instrução recebe 4 argumento: o primeiro deles deve ser posicionado em EAX, como vemos em *movl $4, %eax*. O **valor 4 significa simplesmente escrever (sys_write)**. O segundo argumento é posicionado em EBX. **O valor 1 no nosso caso é quem vai decodificar a string e aponta para a saída padrão *stdout***. O terceiro argumento é posicionado em ECX e é a **mensagem que será escrita na saída padrão**. No nosso caso, colocamos o valor da nossa string final. E o quarto parâmetro em EDX é o **tamanho da nossa string (36 caracteres ou bytes)**. Em resumo, definimos todos os valores dos parâmetros e executamos o comando.
 
-  *OBS: para sistemas de 64-bits não é usual a utilização do comando 0x80 e sim do comando syscall com outras posições de parâmetros.*  
-  
+  *OBS: para sistemas de 64-bits não é usual a utilização do comando 0x80 e sim do comando syscall com outras posições de parâmetros. Para sistemas 64-bits também os nomes dos registradores também são levemente diferentes. Esse tipo de sistema será tratado em seções futuras*  
+
+  *movl $1, %eax*  
+  *movl $0, %ebx*  
+  *int $0x80*  
+
+  Após executado o envio da string para o terminal é necessário finalizar o programa. Para isso é invocado o mesma chamada de sistema do Linux porém com parâmetros diferentes. o valor **1 no registrador EAX significa que estamos invocando a chamada de saída (sys_exit)** e **no registrador EBX colocamos o valor de retorno de nosso programa (no caso 0 para sucesso)**
+
+  ### Executando o Programa  
+
+  Para executar o programa primeiro temos que criar um objeto com o nosso **assembler**. Se nosso programa se chama *primeiro_programa.s* então executamos o segunte comando:  
+
+  `  
+  as -o primeiro_programa.o primeiro_programa.s  
+  `  
+
+  O comando anterior terá como saída um arquivo de objeto chamado *primeiro_programa.o*. A seguir, precisamos do **linker** para criar um executável. Sendo assim, executamos o seguinte comando:  
+
+  `  
+  ld -o primeiro_programa primeiro_programa.o  
+  `  
+
+  O comando aterior criará um executável chamado simplesmente de *primeiro_programa*. Para executá-lo, bastata executar:  
+
+  `  
+  ./primeiro_programa
+  O ID do Fabricante e 'GenuineIntel'
+  `  
