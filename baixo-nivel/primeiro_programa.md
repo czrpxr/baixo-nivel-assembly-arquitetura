@@ -74,8 +74,7 @@ No programa de exemplo que vamnos criar, utilizamos a opção *0* da tabela para
 
 Abaixo temos o código completo desde programa inicial e posteriormente é comentada parte por parte do programa:  
 
-`  
-.section .data  
+`.section .data  
 
  output:  
   .ascii "O ID do Fabricante e 'xxxxxxxxxxxx'\n"  
@@ -97,8 +96,7 @@ Abaixo temos o código completo desde programa inicial e posteriormente é comen
   int $0x80  
   movl $1, %eax  
   movl $0, %ebx  
-  int $0x80  
-  `  
+  int $0x80`  
   ### As partes do programa  
 
   *.section .data*  
