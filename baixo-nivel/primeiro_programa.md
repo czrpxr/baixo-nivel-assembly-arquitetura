@@ -74,7 +74,7 @@ No programa de exemplo que vamnos criar, utilizamos a opção *0* da tabela para
 
 Abaixo temos o código completo desde programa inicial e posteriormente é comentada parte por parte do programa:  
 
-`
+`  
 .section .data  
 
  output:  
