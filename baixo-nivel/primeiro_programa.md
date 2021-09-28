@@ -160,6 +160,6 @@ Abaixo temos o código completo desde programa inicial e posteriormente é comen
   O comando aterior criará um executável chamado simplesmente de *primeiro_programa*. Para executá-lo, bastata executar:  
 
   `  
-  ./primeiro_programa
+  ./primeiro_programa  
   O ID do Fabricante e 'GenuineIntel'
   `  
