@@ -2,7 +2,7 @@
 # 4.1 Partes do Processador
 
 #### Anterior: [4.0 O Processador](./o_processador.md)  
-#### Próximo: [4.3 Tipos de Registradores](./tipos_registradores.md)  
+#### Próximo: [4.2 Tipos de Registradores](./tipos_registradores.md)  
 
 ---  
 
