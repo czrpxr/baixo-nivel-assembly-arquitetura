@@ -27,10 +27,9 @@ Na seção anterior vimos como são as seções de um programa assembly. Entre e
 
 Após utilizar o rótulo e o título é necessário dizer o valor padrão. No nosso primeiro programa isso foi feito da seguinte maneira:  
 
-`  
-.section .data  
- output:  
-  .ascii "O ID do Fabricante e 'xxxxxxxxxxxx'\n"  
+*.section .data*  
+ *output:*  
+  *.ascii "O ID do Fabricante e 'xxxxxxxxxxxx'\n"*  
 `  
 
 Esta declaração reserva 36 bytes da memória, armazena a string nela e atribui o endereço do primeiro byte à *output*. Quando a localização de *output* for referenciada no programa, o assembler saberá onde ir na memória para iniciar a leitura da string.  
@@ -80,8 +79,7 @@ Declarar elementos de dados na seção *.bss* é um pouco diferente da declaraç
 
 Elas funcionam de forma similar reservando espaço na memória para dados não inicializados. Contudo *.lcomm* é utilizado para dados que não serão acessados de fora do código assembly local. Utilizamos essas diretivas dando um nome e a quantidade de bytes a serem reservados. Por exemplo:  
 
-`
-.section .bss  
-  .comm buffer 10000  
-`  
+
+*.section .bss*  
+  *.comm buffer 10000*  
 
