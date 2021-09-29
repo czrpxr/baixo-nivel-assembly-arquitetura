@@ -29,7 +29,6 @@ Após utilizar o rótulo e o título é necessário dizer o valor padrão. No no
 
 `  
 .section .data  
-
  output:  
   .ascii "O ID do Fabricante e 'xxxxxxxxxxxx'\n"  
 `  
@@ -40,7 +39,6 @@ O mesmo acontece para o seguinte:
 
 `  
 .section .data  
-
  pi:  
   .float 3.14159
 `  
