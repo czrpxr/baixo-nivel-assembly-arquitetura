@@ -37,11 +37,13 @@ Esta declaração reserva 36 bytes da memória, armazena a string nela e atribui
 
 O mesmo acontece para o seguinte:  
 
-`  
-.section .data  
- pi:  
-  .float 3.14159
-`  
+
+*.section .data*  
+
+*pi:*  
+
+*.float 3.14159*  
+
   
   Você não está limitado em declarar somente um valor. Você pode definir multiplos valores em uma linha com cada valor sendo armazenado na memória na ordem em que é declarado. Por exemplo:  
   
