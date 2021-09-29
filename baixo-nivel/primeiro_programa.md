@@ -1,6 +1,6 @@
 # 6. Primeiro Programa Assembly
 
-#### Próximo: [6. ](./md)  
+#### Próximo: [6.1 Declarando Dados ](./declarando_dados.md)  
 #### Anterior: [5.4 O Compilador](./o_compilador.md)  
 
   ---  
@@ -112,7 +112,7 @@ Abaixo temos o código completo desde programa inicial e posteriormente é comen
  *.globl _start*  
   *_start:*  
 
-  Nesta parte iniciamos a seção text onde ficará a lógica propriamente dita. Após a inicialização declaramos a instrução global *_start* que dirá ao compilador onde nosso código se inicia. Logo abaixo iniciamos a parte do código justamente com a instrução *_start:_  
+  Nesta parte iniciamos a seção text onde ficará a lógica propriamente dita. Após a inicialização declaramos a instrução global *_start* que dirá ao compilador onde nosso co_compiladoródigo se inicia. Logo abaixo iniciamos a parte do código justamente com a instrução *_start:_  
   
   *movl $0, %eax*  
   *cpuid*  

@@ -33,7 +33,9 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
     5.2 [O Linker](./baixo-nivel/o_linker.md)  
     5.3 [O Debugger](./baixo-nivel/o_debugger.md)  
     5.4 [O Compilador](./baixo-nivel/o_compilador.md)  
-6. [Primeiro Programa Assembly](./baixo-nivel/primeiro_programa.md)
+6. [Primeiro Programa Assembly](./baixo-nivel/primeiro_programa.md)  
+    6.1 [Declarando Elementos de Dados](./baixo-nivel/declarando_dados.md)  
+    6.2 [Movendo Dados](./baixo-nivel/movendo_dados.md)  
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
