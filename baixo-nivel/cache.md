@@ -1,7 +1,7 @@
 
 # 3.6 Memória Cache
 
-#### Próximo: [4.0 O Processador](./registradores_flags.md)
+#### Próximo: [4.0 O Processador](./o_processador.md)
 #### Anterior: [3.5 Estado de Espera](./estado_espera.md)
 
 ---  

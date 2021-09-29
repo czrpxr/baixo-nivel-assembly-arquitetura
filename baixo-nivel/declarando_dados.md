@@ -58,3 +58,30 @@ Podem ser declarados quantos elementos de dados forem necessários na seção *.
 
 *OBS: cuidado ao definir elementos de dados e utilizá-los no programa. O programa nao irá saber se você está manipulando o dado da forma correta! Por exemplo, se você definir dois inteiros de 16-bits, mas referenciar um como inteiro de 32-bits, o assembler continuará lendo os 4 bytes da memória necessários, mesmo que não seja o valor correto.*  
 
+
+## Declarando Constantes  
+
+A seção *.data* também permite a declaração de constantes. Utilizando o operador *.eq* podemos atribuir um nome a valores constantes que podem ser utilizados posteriormente no código. Exemplos:  
+
+`  
+.equ factor, 3  
+.equ LINUX_SYS_CALL, 0x80  
+`  
+
+Para invocar a constante no código é necessário utilizar o símbolo **$**.
+
+`  
+movl $LINUX_SYS_CALL, %eax  
+`  
+
+## A Seção bss  
+
+Declarar elementos de dados na seção *.bss* é um pouco diferente da declaração da área *.data*. Ao invés de especificar tipos específicos de dados na seção *.bss* apenas reservamos segmentos de memória para utilização posterior. No assembler GNU utilizamos duas diretivas diferentes para declarar buffers. Elas são *.comm* e *.lcomm*.  
+
+Elas funcionam de forma similar reservando espaço na memória para dados não inicializados. Contudo *.lcomm* é utilizado para dados que não serão acessados de fora do código assembly local. Utilizamos essas diretivas dando um nome e a quantidade de bytes a serem reservados. Por exemplo:  
+
+`
+.section .bss  
+  .comm buffer 10000  
+`  
+
