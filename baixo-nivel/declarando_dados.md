@@ -10,6 +10,7 @@ Na seção anterior vimos como são as seções de um programa assembly. Entre e
 *OBS: Existe uma outra seção de dados além de .data chamada de .rodata. Nesta seção os elementos somente podem ser acessados para leitura (read-only)*  
 
 É utilizado um rótulo para referenciar o elemento (assim como uma variável em outras linguagens). Além do rótulo deve ser definido quantos bytes serão reservados para este elemento. Isso é feito utilizando uma diretiva do assembler. Abaixo temos uma tabela delas:  
+  
 
 |Diretiva|Tipo de Dados|
 |:---:|:---:|
