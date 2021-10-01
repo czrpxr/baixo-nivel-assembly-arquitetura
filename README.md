@@ -36,6 +36,7 @@ Você pode visitar sempre que quiser, copiar, forkear, print, o que você quiser
 6. [Primeiro Programa Assembly](./baixo-nivel/primeiro_programa.md)  
     6.1 [Declarando Elementos de Dados](./baixo-nivel/declarando_dados.md)  
     6.2 [Movendo Dados](./baixo-nivel/movendo_dados.md)  
+        6.2.1 [MOV Condicional](./baixo-nivel/mov_condicional.md)  
 
 ## Referências (até o momento):
 * The Art of Assembly Language, por Randall Hyde (1st Edition)
