@@ -6,7 +6,7 @@
 ---  
   
   Algumas vezes em programação é necessário trocar dados entre posições. Para fazer isso utilizando a instrução *mov* é necessário um registrador intermediário temporário. Por exemplo, para trocar os valores entre *eax* e *ebx* você teria que fazer algo como abaixo:  
-  
+
   ![](./imgs/622_001.png)  
 
   As instruções ficariam algo como:  
@@ -40,3 +40,15 @@
   A instrução BSWAP é uma ferramenta poderosa para se ter em mãos quando se trabalha com sistemas de diferentes orientações de bytes. o BSWAP inverte a ordem dos bytes do registrador. Em arquitetura 32-bits os bits de 0 a 7 são invertidos com os bits de 24 a 31 , enquanto os bits de 8 a 15 são invertidos com os de 16 a 23. Isso é ilustrado abaixo:  
 
   ![](./imgs/622_002.png)  
+
+ ## XADD  
+
+ A instrução XADD é utilizada para intercambiar valores entre dois registradores ou posições da memória e um registrador. Além disso ele adiciona os valores e armazena o resultado em um local de destino (também um registrador ou posição na memória). O formato para utilização da instrução é  
+
+ *xadd origem, destino*  
+
+ onde origem deve ser um registrador e destino pode ser um registrador ou posição na memória e irá conter o resultado da adição.  
+
+ ## CMPXCHG  
+
+ A instrução CMPXCHG compara o operando de destino com os valores no registrador acumulador (*eax, ax, al..*). Se o valor é igual, o valor do operando de origem é carregado no operando de destino. Se o valor não é igual, o operando de destino é carregado no registrador acumulador.
