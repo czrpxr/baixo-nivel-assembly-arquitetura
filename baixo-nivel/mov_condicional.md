@@ -32,7 +32,7 @@ A tabela seguinte mostra as intruções *cmov* para operações sem sinal:
 |CMOVNC|Sem carregamento| CF = 0|
 |CMOVB/CMOVNAE|Abaixo/não acima ou igual| CF = 1|
 |CMOVC|Com Carregamento| CF = 1|
-|CMOVBE/CMOVNA|Abaixo ou Igual / Não acima| (CF ou ZF = 1)
+|CMOVBE/CMOVNA|Abaixo ou Igual / Não acima| (CF ou ZF = 1)|
 |CMOVE/CMOVZ|Igual/Zero| ZF = 1|
 |CMOVNE/CMOVNZ|Não Igual/Não zero| ZF = 0|
 |CMOVP/CMOVPE|Paridade/Par Paridade| PF = 1|
