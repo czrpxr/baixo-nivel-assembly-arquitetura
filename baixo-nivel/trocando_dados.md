@@ -51,4 +51,34 @@
 
  ## CMPXCHG  
 
- A instrução CMPXCHG compara o operando de destino com os valores no registrador acumulador (*eax, ax, al..*). Se o valor é igual, o valor do operando de origem é carregado no operando de destino. Se o valor não é igual, o operando de destino é carregado no registrador acumulador.
+ A instrução CMPXCHG compara o operando de destino com os valores no registrador acumulador (*eax, ax, al..*). Se o valor é igual, o valor do operando de origem é carregado no operando de destino. Se o valor não é igual, o operando de destino é carregado no registrador acumulador.  Aplicação:  
+
+  *cmpxchg origem, destino*  
+
+  Exemplo:  
+
+  *.section .data*  
+  *data:*  
+    *.int 10*  
+  
+  *.section .text*  
+  *.globl _start*  
+    *_start:*  
+
+    *movl $10, %eax*  
+    *movl $5, %ebx*  
+    *cmpxchg %ebx, data*  
+    *movl $1, %eax*  
+    *int $0x80*  
+  
+No exemplo anterior o valor armazenado em *data* (10) será comparado com o valor em *eax* (10). Como eles são iguais, o valor no operando *ebx* será escrito no local referenciado por *data* e o valor de *ebx* continuará o mesmo.  
+
+## CMPXCHG8B  
+
+Podemos deduzir pelo seu nome que a instrução *cmpxchg8b* é similar a instrução *cmpxchg* com uma pequena alteração - ela opera em valores de 8 bytes. Esta instrução utiliza apenas um operando:  
+
+*cmpxchg8b destino*  
+
+O valor armazenado em *destino* será comparado com o valor contido nos registradores *edx* e *eax* (com *edx* sendo o registrador mais significativo e *eax* sendo o menos significativo). Se *destino* for igual ao valor contido no par *edx:eax*, o valor de 64 bits contido em *ecx:ebx* será movido para o *destino*. Caso negativo, o valor contido em *destino* ser[a movido para *edx:eax*.  
+
+
