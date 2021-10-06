@@ -1,7 +1,7 @@
 # 6.2.1 MOV Condicional
 
-#### Próximo: 
-#### Anterior: [6.2 Movendo Dados](./baixo-nivel/movendo_dados.md) 
+#### Próximo: [6.2.2 Trocando Dados](./trocando_dados.md)  
+#### Anterior: [6.2 Movendo Dados](./movendo_dados.md) 
 
 ---  
   
