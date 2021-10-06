@@ -78,7 +78,7 @@ Podemos ter também elementos de dados declarados da seguinte maneira:
 *values:*
 *.int 10, 15, 20, 25, 30, 35, 40, 45*  
 
-A instruão acima cria dados armazenados sequencialmente na memória. Cada um destes elementos ocupa uma unidade de memória (por ser int, 4 bytes para 32-bits). Quando referenciar este conjunto, você deve especificar qual valor está acessando. A maneira de fazer isso é chamada de modo de inexação de memória.  
+A instrução acima cria dados armazenados sequencialmente na memória. Cada um destes elementos ocupa uma unidade de memória (por ser int, 4 bytes para 32-bits). Quando referenciar este conjunto, você deve especificar qual valor está acessando. A maneira de fazer isso é chamada de modo de inexação de memória.  
 O formato base da expressão é a seguinte:  
 
 *endereco_base(offset, index, tamanho)*  
