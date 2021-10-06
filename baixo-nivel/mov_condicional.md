@@ -41,7 +41,7 @@ A tabela seguinte mostra as intruções *cmov* para operações sem sinal:
 Como você pode ver as condições para operação sem sinal recaem sobre as flags *Carry, Zero e Parity* para determinar a diferença entre dois operandos. Se o operando possui sinal, um conjunto diferente de condições devem ser utilizadas, conforme vemos abaixo:  
 
 |Par de Instruções|Descrição|Condição das Flags|
-|:---:|:---:|
+|:---:|:---:|:---:|
 |CMOVGE/CMOVNL|Maior ou igual/Não menor| (SF xor OF) = 0|
 |CMOVL/CMOVNGE|Menor/Não maior ou igual| (SF xor OF) = 1|
 |CMOVLE/CMOVNG|Menor ou igual/Não maior| ((SF xor OF) or ZF) = 1|
