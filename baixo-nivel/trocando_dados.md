@@ -1,6 +1,6 @@
 # 6.2.2 Trocando Dados
 
-#### Próximo: []()  
+#### Próximo: [7.0 A Pilha (Stack)](./a_pilha.md)  
 #### Anterior: [6.2.1 MOV Condicional](./mov_condicional.md) 
 
 ---  
